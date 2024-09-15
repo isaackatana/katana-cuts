@@ -1,0 +1,17 @@
+{
+  "name": "third-world-music",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:front": "npm run dev --prefix front",
+    "start:back": "npm run start --prefix back",
+    "start": "concurrently \"npm run start:front\" \"npm run start:back\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
