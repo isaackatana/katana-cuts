@@ -32,4 +32,12 @@ body header nav ul a {
 }
 body header nav ul .active {
   color: yellow;
+}
+body .artists {
+  display: flex;
+  justify-content: center;
+}
+body .artists .wrapper img {
+  width: 400px;
+  height: 600px;
 }/*# sourceMappingURL=App.css.map */
