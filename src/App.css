@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: black;
+}
+body header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+body header .logo img {
+  width: 100px;
+}
+body header nav ul {
+  display: flex;
+  gap: 30px;
+}
+body header nav ul a {
+  list-style: none;
+  font-size: large;
+  font-weight: bold;
+  color: white;
+}/*# sourceMappingURL=App.css.map */
