@@ -2,7 +2,6 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import Home from './pages/Home.jsx'
-import Artists from './pages/artists/Artists.jsx'
 import Shop from './pages/Shop.jsx'
 import About from './pages/About.jsx'
 import NotFoundPage from './pages/NotFoundPage.jsx'
@@ -12,6 +11,8 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Artists from './pages/Artists.jsx'
+import ArtistInfo from './pages/ArtistInfo.jsx'
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/artists",
         element: <Artists/>,
+      },
+      {
+        path: "artists/artist/:slug",
+        element: <ArtistInfo/>,
       },
       {
         path: "/shop",
