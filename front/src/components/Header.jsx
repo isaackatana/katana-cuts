@@ -5,9 +5,6 @@ function Header() {
   return (
     <>
     <header>
-        <div className="logo">
-            <img src="/src/assets/third-world-music(jpg).jpeg" alt="" />
-        </div>
         <nav>
             <ul>
                 <NavLink to='/home'>Home</NavLink>
@@ -16,9 +13,12 @@ function Header() {
                 <NavLink to='/about'>About</NavLink>
             </ul>
         </nav>
+        <div className="logo">
+            <img src="/src/assets/third-world-music.png" alt="" />
+        </div>
     </header>
     </>
   )
 }
 
-export default Header
+export default Header 

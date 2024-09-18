@@ -7,6 +7,7 @@
 
 body {
   background-color: black;
+  color: white;
 
   header {
     display: flex;
@@ -43,12 +44,22 @@ body {
   .artists {
     display: flex;
     justify-content: center;
+    padding: 30px;
 
     .wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
       img {
-        width: 400px;
+        width: 100%;
         height: 600px;
       }
     }
+
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
   }
 }
