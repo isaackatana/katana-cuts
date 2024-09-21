@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://third-world-music-back.onrender.com',
+        target: 'http://localhost:3000',
         changeOrigin: true,
       },
     }

@@ -7,13 +7,13 @@ function Header() {
     <header>
         <nav>
             <ul>
-                <NavLink to='/home'>Home</NavLink>
+                <NavLink to='/'>Home</NavLink>
                 <NavLink to='/artists'>Artists</NavLink>
                 <NavLink to='/shop'>Shop</NavLink >
                 <NavLink to='/about'>About</NavLink>
             </ul>
         </nav>
-        <Link to='/home'>
+        <Link to='/'>
           <div className="logo">
               <img src="../third-world-music.png" alt="" />
           </div>

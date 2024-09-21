@@ -15,9 +15,9 @@ function ArtistList() {
     {artists.map((artist, index) => (
       <div className="wrapper" key={artist.id}>
           <img src={artist.image} alt="" />
-          <div className='info'>
+          <h3>
             {artist.name}
-          </div>
+          </h3>
       </div>
     ))}
     </>
