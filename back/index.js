@@ -36,7 +36,7 @@ const artists = [
   },
   {
     image: '',
-    name: 'Donn J',
+    name: 'Donn-J',
     socialLinks: {
       instagram: 'https://instagram.com/artistthree',
       twitter: 'https://twitter.com/artistthree',
