@@ -21,7 +21,6 @@ function ArtistList() {
           </h3>
           <div className="social-media">
             <a href="" target=""></a>
-            <FaFacebook/>
             <FaInstagram/>
             <FaYoutube/>
             <FaSpotify/>

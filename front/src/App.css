@@ -39,6 +39,9 @@ body header nav ul a {
 body header nav ul .active {
   color: yellow;
 }
+body .home {
+  padding: 10px 30px;
+}
 body .artists {
   display: grid;
   grid-template-columns: 1fr 1fr;
