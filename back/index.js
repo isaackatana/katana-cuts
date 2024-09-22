@@ -1,6 +1,5 @@
 // backend/server.js
 const express = require('express');
-const { default: mongoose } = require('mongoose');
 const app = express();
 const PORT = 5000;
 
