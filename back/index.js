@@ -2,13 +2,14 @@
 const express = require('express');
 const { default: mongoose } = require('mongoose');
 const app = express();
-const PORT = 3000;
+const PORT = 5000;
 
 app.use(express.json());
 
 app.use(require('cors')());
 
 const cors = require('cors');
+
 app.use(cors({
   origin: 'http://localhost:5173', // Vite's default port
   credentials: true, // If you are using cookies
