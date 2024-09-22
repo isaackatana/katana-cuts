@@ -10,7 +10,7 @@ app.use(require('cors')());
 const cors = require('cors');
 
 app.use(cors({
-  origin: 'http://localhost:5173', // Vite's default port
+  origin: 'https://third-world-music-front.onrender.com/', // Vite's default port
   credentials: true, // If you are using cookies
 }));
 
