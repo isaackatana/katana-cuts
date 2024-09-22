@@ -16,6 +16,8 @@ body header {
   padding: 10px 30px;
   position: sticky;
   top: 0;
+  background-color: black;
+  z-index: 1;
 }
 body header .logo {
   cursor: pointer;
@@ -55,8 +57,19 @@ body .artists .wrapper img {
 }
 body .artists .wrapper h3 {
   position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+body .artists .wrapper .social-media {
+  position: absolute;
   right: 20px;
   bottom: 20px;
+  display: flex;
+  gap: 5px;
+}
+body .artists .wrapper .social-media svg {
+  font-size: 30px;
+  cursor: pointer;
 }
 body footer {
   display: flex;

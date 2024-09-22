@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { FaFacebook, FaInstagram, FaSpotify, FaTiktok, FaYoutube } from "react-icons/fa";
 
 function ArtistList() {
   const [artists, setArtists] = useState([]);
@@ -18,6 +19,14 @@ function ArtistList() {
           <h3>
             {artist.name}
           </h3>
+          <div className="social-media">
+            <a href="" target=""></a>
+            <FaFacebook/>
+            <FaInstagram/>
+            <FaYoutube/>
+            <FaSpotify/>
+            <FaTiktok/>
+          </div>
       </div>
     ))}
     </>
