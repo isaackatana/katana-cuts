@@ -58,6 +58,8 @@ body .artists .wrapper img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 body .artists .wrapper h3 {
   position: absolute;

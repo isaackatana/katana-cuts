@@ -49,6 +49,7 @@ app.get('/api/artists', (req, res) => {
       }
   )
   );
+  
   res.json(previews);
 });
 
