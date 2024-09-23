@@ -44,15 +44,17 @@ body .home {
 }
 body .home .latest-videos {
   display: flex;
+  gap: 10px;
+  overflow-x: hidden;
 }
 body .artists {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
   padding: 30px;
 }
 body .artists .wrapper {
-  height: 600px;
+  height: 400px;
   gap: 10px;
   position: relative;
 }
@@ -63,6 +65,7 @@ body .artists .wrapper img {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+  border-radius: 20px;
 }
 body .artists .wrapper h3 {
   position: absolute;
