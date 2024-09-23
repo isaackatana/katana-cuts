@@ -9,7 +9,7 @@ function Header() {
             <ul>
                 <NavLink to='/'>Home</NavLink>
                 <NavLink to='/artists'>Artists</NavLink>
-                <NavLink to='/shop'>Shop</NavLink >
+                <NavLink to='/store'>Store</NavLink >
                 <NavLink to='/about'>About</NavLink>
             </ul>
         </nav>

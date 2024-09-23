@@ -64,12 +64,13 @@ body {
     padding: 30px;
 
     .wrapper {
+      height: 600px;
       gap: 10px;
       position: relative;
 
       img {
         width: 100%;
-        height: 600px;
+        height: 100%;
         object-fit: cover;
       }
       

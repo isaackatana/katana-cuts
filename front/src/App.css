@@ -49,12 +49,13 @@ body .artists {
   padding: 30px;
 }
 body .artists .wrapper {
+  height: 600px;
   gap: 10px;
   position: relative;
 }
 body .artists .wrapper img {
   width: 100%;
-  height: 600px;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }

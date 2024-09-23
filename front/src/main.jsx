@@ -13,6 +13,7 @@ import {
 } from "react-router-dom";
 import Artists from './pages/Artists.jsx'
 import ArtistInfo from './pages/ArtistInfo.jsx'
+import Store from './pages/Store.jsx'
 
 const router = createBrowserRouter([
   {
@@ -33,8 +34,8 @@ const router = createBrowserRouter([
         element: <ArtistInfo/>,
       },
       {
-        path: "/shop",
-        element: <Shop/>,
+        path: "/store",
+        element: <Store/>,
       },
       {
         path: "/about",
