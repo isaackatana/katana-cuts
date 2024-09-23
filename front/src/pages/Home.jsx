@@ -5,6 +5,11 @@ function Home() {
     <>
     <div className="home">
     <iframe src="https://open.spotify.com/embed/playlist/2EIXrglBpVLUbXMylfnsGR?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <div className="latest-videos">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/-JVDxBX6gQU?si=Ko6PZ0Py4QJztoK4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/-JVDxBX6gQU?si=Ko6PZ0Py4QJztoK4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/-JVDxBX6gQU?si=Ko6PZ0Py4QJztoK4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
     </div>
     </>
   )
