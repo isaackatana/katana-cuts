@@ -53,6 +53,16 @@ body {
         display: flex;
         gap: 30px;
 
+        @include respond-to(mobile) {
+          display: none;
+        }
+      
+        @include respond-to(tablet) {
+        }
+      
+        @include respond-to(desktop) {
+        }
+
         a {
           list-style: none;
           font-size: large;
@@ -69,10 +79,14 @@ body {
   }
 
   .home {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     padding: 10px 30px;
 
     @include respond-to(mobile) {
       padding: 7.5px;
+      gap: 15px;
     }
   
     @include respond-to(tablet) {
@@ -84,7 +98,21 @@ body {
     .latest-videos {
       display: flex;
       gap: 10px;
-      overflow-x: hidden;
+      overflow: hidden;
+
+      .container {
+        display: flex;
+        gap: 15px;
+        div {
+          width: 560px;
+          height: 315px;
+  
+          iframe {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
     }
   }
 

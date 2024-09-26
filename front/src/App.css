@@ -29,6 +29,11 @@ body header nav ul {
   display: flex;
   gap: 30px;
 }
+@media screen and (max-width: 480px) {
+  body header nav ul {
+    display: none;
+  }
+}
 body header nav ul a {
   list-style: none;
   font-size: large;
@@ -40,17 +45,33 @@ body header nav ul .active {
   color: yellow;
 }
 body .home {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   padding: 10px 30px;
 }
 @media screen and (max-width: 480px) {
   body .home {
     padding: 7.5px;
+    gap: 15px;
   }
 }
 body .home .latest-videos {
   display: flex;
   gap: 10px;
-  overflow-x: hidden;
+  overflow: hidden;
+}
+body .home .latest-videos .container {
+  display: flex;
+  gap: 15px;
+}
+body .home .latest-videos .container div {
+  width: 560px;
+  height: 315px;
+}
+body .home .latest-videos .container div iframe {
+  width: 100%;
+  height: 100%;
 }
 body .artists {
   display: grid;
