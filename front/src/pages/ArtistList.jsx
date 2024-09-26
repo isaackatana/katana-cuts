@@ -4,7 +4,7 @@ import { FaInstagram, FaSpotify, FaTiktok, FaYoutube } from "react-icons/fa";
 import DBerry from './images/Dberry1.jpg'
 import AdamLeenz from './images/AdamLeenz2.jpg'
 import DonnJ from './images/DonnJ1.jpg'
-import DrugBeats from './images/DonnJ1.jpg'
+import DrugBeats from './images/DrugBeats3.webp'
 
 function ArtistList() {
   // const [artists, setArtists] = useState([]);

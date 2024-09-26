@@ -42,6 +42,11 @@ body header nav ul .active {
 body .home {
   padding: 10px 30px;
 }
+@media screen and (max-width: 480px) {
+  body .home {
+    padding: 7.5px;
+  }
+}
 body .home .latest-videos {
   display: flex;
   gap: 10px;
@@ -52,6 +57,12 @@ body .artists {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
   padding: 30px;
+}
+@media screen and (max-width: 480px) {
+  body .artists {
+    grid-template-columns: 1fr;
+    padding: 7.5px;
+  }
 }
 body .artists .wrapper {
   height: 400px;

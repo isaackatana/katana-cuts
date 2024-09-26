@@ -1,3 +1,22 @@
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == mobile {
+    @media screen and (max-width: 480px) {
+      @content;
+    }
+  }
+  @else if $breakpoint == tablet {
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  @else if $breakpoint == desktop {
+    @media screen and (min-width: 1024px) {
+      @content;
+    }
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,15 +24,11 @@
   font-family: sans-serif;
 }
 
-@mixin mobile(){
-  @media (max-width: 450px) {
-    @content
-  }
-}
-
 body {
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
+
+  
 
   header {
     display: flex;
@@ -56,6 +71,16 @@ body {
   .home {
     padding: 10px 30px;
 
+    @include respond-to(mobile) {
+      padding: 7.5px;
+    }
+  
+    @include respond-to(tablet) {
+    }
+  
+    @include respond-to(desktop) {
+    }
+
     .latest-videos {
       display: flex;
       gap: 10px;
@@ -68,6 +93,17 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     padding: 30px;
+
+    @include respond-to(mobile) {
+      grid-template-columns: 1fr;
+      padding: 7.5px;
+    }
+  
+    @include respond-to(tablet) {
+    }
+  
+    @include respond-to(desktop) {
+    }
 
     .wrapper {
       height: 400px;
