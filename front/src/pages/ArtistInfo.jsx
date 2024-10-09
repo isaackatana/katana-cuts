@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ArtistInfo() {
+function ArtistInfo({artists}) {
   return (
     <div>
         <h1>{artist.name}</h1>

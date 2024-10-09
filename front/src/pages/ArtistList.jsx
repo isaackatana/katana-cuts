@@ -1,53 +1,23 @@
 import { useEffect, useState } from "react";
 import { FaInstagram, FaSpotify, FaTiktok, FaYoutube } from "react-icons/fa";
-
-import DBerry from './images/Dberry1.jpg'
-import AdamLeenz from './images/AdamLeenz2.jpg'
-import DonnJ from './images/DonnJ1.jpg'
-import DrugBeats from './images/DrugBeats3.webp'
+import { Link } from "react-router-dom";
 
 function ArtistList() {
-  // const [artists, setArtists] = useState([]);
+  const [artists, setArtists] = useState([]);
 
-  //   useEffect(() => {
-  //       fetch('/api/artists')
-  //       .then((response) => response.json())
-  //       .then((data) => setArtists(data))
-  //       .catch((error) => console.error('Error fetching artists:', error));
-  //   }, []);
-
-  const artists = [
-    
-    {
-      id: 1,
-      image: `${DonnJ}`,
-      name: 'Donn-J',
-    },
-    {
-      id: 2,
-      image: `${AdamLeenz}`,
-      name: 'Adam Leenz',
-    },
-    {
-      id: 3,
-      image: `${DBerry}`,
-      name: 'D-Berry',
-    },
-    {
-      id: 4,
-      image: `${DrugBeats}`,
-      name: 'Drug Beats',
-    },
-  ];
+    useEffect(() => {
+        fetch('/api/artists')
+        .then((response) => response.json())
+        .then((data) => setArtists(data))
+        .catch((error) => console.error('Error fetching artists:', error));
+    }, []);
 
   return (
     <>
     {artists.map((artist, index) => (
       <div className="wrapper" key={artist.id}>
           <img src={artist.image} alt="" />
-          <h3>
-            {artist.name}
-          </h3>
+          <Link to='/artists/artist/:slug'><h3>{artist.name}</h3></Link>
           <div className="social-media">
             <a href="" target=""></a>
             <FaInstagram/>

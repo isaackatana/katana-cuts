@@ -18,6 +18,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
+    errorElement: <NotFoundPage/>,
     
     children: [
       {
@@ -29,7 +30,7 @@ const router = createBrowserRouter([
         element: <Artists/>,
       },
       {
-        path: "artists/artist/:slug",
+        path: "/artists/artist/:slug",
         element: <ArtistInfo/>,
       },
       {
