@@ -4,7 +4,7 @@ function Footer() {
   return (
     <>
     <footer>
-        <p>© 2024 Third World Music LLC. All Rights Reserved.</p>
+        <p>© 2024 Katana Cuts LLC. All Rights Reserved.</p>
     </footer>
     </>
   )
