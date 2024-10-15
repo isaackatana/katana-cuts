@@ -69,6 +69,11 @@ body .home .latest-videos .container div {
   width: 560px;
   height: 315px;
 }
+@media screen and (max-width: 480px) {
+  body .home .latest-videos .container div {
+    height: 180px;
+  }
+}
 body .home .latest-videos .container div iframe {
   width: 100%;
   height: 100%;

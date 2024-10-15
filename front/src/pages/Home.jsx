@@ -4,7 +4,7 @@ function Home() {
   return (
     <>
     <div className="home">
-    <iframe src="https://open.spotify.com/embed/playlist/2EIXrglBpVLUbXMylfnsGR?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <iframe src="https://open.spotify.com/embed/playlist/1mj0UNmFo1m9c96TN3s4K5?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     <div className="latest-videos">
       <div className="container">
         <div>

@@ -104,6 +104,16 @@ body {
         div {
           width: 560px;
           height: 315px;
+
+          @include respond-to(mobile) {
+            height: 180px;
+          }
+        
+          @include respond-to(tablet) {
+          }
+        
+          @include respond-to(desktop) {
+          }
   
           iframe {
             width: 100%;
