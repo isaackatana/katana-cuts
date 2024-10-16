@@ -10,9 +10,9 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Artists from './pages/Artists.jsx'
-import ArtistInfo from './pages/ArtistInfo.jsx'
 import Store from './pages/Store.jsx'
+import Contact from './pages/Contact.jsx'
+import ProductInfo from './ProductInfo.jsx'
 
 const router = createBrowserRouter([
   {
@@ -26,20 +26,20 @@ const router = createBrowserRouter([
         element: <Home/>,
       },
       {
-        path: "/artists",
-        element: <Artists/>,
-      },
-      {
-        path: "/artists/artist/:slug",
-        element: <ArtistInfo/>,
-      },
-      {
         path: "/store",
         element: <Store/>,
       },
       {
+        path: "/products/product/:slug",
+        element: <ProductInfo/>,
+      },
+      {
         path: "/about",
         element: <About/>,
+      },
+      {
+        path: "/contact",
+        element: <Contact/>,
       },
       {
         path: "*",

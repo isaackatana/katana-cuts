@@ -65,6 +65,55 @@ app.get('/api/artists/:slug', (req, res) => {
   }
 });
 
+// Products
+const products = [
+  {
+    id: 1,
+    image: './images/Logo.jpeg',
+    name: 'Donn-J',
+  },
+  {
+    id: 2,
+    image: './images/Logo.jpeg',
+    name: 'Adam Leenz',
+  },
+  {
+    id: 3,
+    image: './images/Logo.jpeg',
+    name: 'D-Berry',
+  },
+  {
+    id: 4,
+    image: './images/Logo.jpeg',
+    name: 'Drug Beats',
+  },
+];
+
+app.get('/api/products', (req, res) => {
+  const previews = products.map(product => (
+      { 
+          id: product.id, 
+          image: product.image, 
+          name: product.name, 
+          slug: product.slug,
+      }
+  )
+  );
+  
+  res.json(previews);
+});
+
+app.get('/api/products/:slug', (req, res) => {
+  const productSlug = req.params.slug;
+  const product = artists.find(p => p.slug === productSlug);
+  
+  if (product) {
+      res.json(product);
+  } else {
+      res.status(404).json({ message: 'Product not found' });
+  }
+});
+
 app.listen(PORT, () => {
   console.log(`Backend running on http://localhost:${PORT}`);
 });

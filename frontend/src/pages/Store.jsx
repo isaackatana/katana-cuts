@@ -1,8 +1,11 @@
 import React from 'react'
+import ProductList from './ProductList'
 
 function Store() {
   return (
-    <div>Store</div>
+    <>
+    <ProductList/>
+    </>
   )
 }
 
