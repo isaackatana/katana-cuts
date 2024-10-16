@@ -78,38 +78,24 @@ body .home .latest-videos .container div iframe {
   width: 100%;
   height: 100%;
 }
-body .container .search-artist {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  gap: 8px;
-  padding: 0 30px;
-}
-body .container .search-artist input {
-  padding: 10px;
-}
-body .container .search-artist svg {
-  font-size: 25px;
-  cursor: pointer;
-}
-body .container .artists {
+body .store {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
   padding: 10px 30px;
 }
 @media screen and (max-width: 480px) {
-  body .container .artists {
+  body .store {
     grid-template-columns: 1fr;
     padding: 7.5px;
   }
 }
-body .container .artists .wrapper {
+body .store .wrapper {
   height: 400px;
   gap: 10px;
   position: relative;
 }
-body .container .artists .wrapper img {
+body .store .wrapper img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -118,22 +104,22 @@ body .container .artists .wrapper img {
      object-position: top;
   border-radius: 20px;
 }
-body .container .artists .wrapper a {
+body .store .wrapper a {
   color: white;
 }
-body .container .artists .wrapper a h3 {
+body .store .wrapper a h3 {
   position: absolute;
   left: 20px;
   bottom: 20px;
 }
-body .container .artists .wrapper .social-media {
+body .store .wrapper .social-media {
   position: absolute;
   right: 20px;
   bottom: 20px;
   display: flex;
   gap: 5px;
 }
-body .container .artists .wrapper .social-media svg {
+body .store .wrapper .social-media svg {
   font-size: 30px;
   cursor: pointer;
 }
