@@ -15,7 +15,7 @@ function Header() {
         </nav>
         <Link to='/'>
           <div className="logo">
-              <img src="../third-world-music.png" alt="" />
+              <img src="/katana-cuts.svg" alt="" />
           </div>
         </Link>
     </header>
