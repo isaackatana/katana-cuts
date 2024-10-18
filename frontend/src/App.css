@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Kanit", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
 body {
@@ -37,12 +39,20 @@ body header nav ul {
 body header nav ul a {
   list-style: none;
   font-size: large;
-  font-weight: bold;
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
 body header nav ul .active {
   color: yellow;
+}
+body header section .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+body header section .social-links svg {
+  font-size: 30px;
+  cursor: pointer;
 }
 body .home {
   display: flex;
@@ -65,16 +75,16 @@ body .home .latest-videos .container {
   display: flex;
   gap: 15px;
 }
-body .home .latest-videos .container div {
+body .home .latest-videos .container .wrapper {
   width: 560px;
   height: 315px;
 }
 @media screen and (max-width: 480px) {
-  body .home .latest-videos .container div {
-    height: 180px;
+  body .home .latest-videos .container .wrapper {
+    width: 394px;
   }
 }
-body .home .latest-videos .container div iframe {
+body .home .latest-videos .container .wrapper iframe {
   width: 100%;
   height: 100%;
 }
@@ -112,20 +122,30 @@ body .store .wrapper a h3 {
   left: 20px;
   bottom: 20px;
 }
-body .store .wrapper .social-media {
+body .store .wrapper .social-links {
   position: absolute;
   right: 20px;
   bottom: 20px;
   display: flex;
   gap: 5px;
 }
-body .store .wrapper .social-media svg {
+body .store .wrapper .social-links svg {
   font-size: 30px;
   cursor: pointer;
 }
 body footer {
   display: flex;
+  flex-direction: column;
   text-align: center;
   justify-content: center;
   padding: 10px 30px;
+}
+body footer .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+body footer .social-links svg {
+  font-size: 30px;
+  cursor: pointer;
 }/*# sourceMappingURL=App.css.map */

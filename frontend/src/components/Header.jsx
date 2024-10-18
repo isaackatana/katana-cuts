@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaInstagram, FaSpotify, FaTiktok, FaYoutube } from 'react-icons/fa'
 import { Link, NavLink } from 'react-router-dom'
 
 function Header() {
@@ -18,6 +19,14 @@ function Header() {
               <img src="/katana-cuts.svg" alt="" />
           </div>
         </Link>
+        <section>
+          <div className="social-links">
+            <FaInstagram/>
+            <FaYoutube/>
+            <FaSpotify/>
+            <FaTiktok/>
+          </div>
+        </section>
     </header>
     </>
   )

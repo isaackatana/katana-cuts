@@ -21,7 +21,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Kanit", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
 body {
@@ -64,13 +66,25 @@ body {
         a {
           list-style: none;
           font-size: large;
-          font-weight: bold;
           color: rgb(255, 255, 255);
           text-decoration: none;
         }
         
         .active {
           color: yellow;
+        }
+      }
+    }
+
+    section {
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+  
+        svg {
+          font-size: 30px;
+          cursor: pointer;
         }
       }
     }
@@ -101,12 +115,13 @@ body {
       .container {
         display: flex;
         gap: 15px;
-        div {
+
+        .wrapper {
           width: 560px;
           height: 315px;
 
           @include respond-to(mobile) {
-            height: 180px;
+            width: 394px;
           }
         
           @include respond-to(tablet) {
@@ -163,7 +178,7 @@ body {
         }
       }
 
-      .social-media {
+      .social-links {
         position: absolute;
         right: 20px;
         bottom: 20px;
@@ -181,8 +196,20 @@ body {
 
   footer {
     display: flex;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
     padding: 10px 30px;
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+
+      svg {
+        font-size: 30px;
+        cursor: pointer;
+      }
+    }
   }
 }
