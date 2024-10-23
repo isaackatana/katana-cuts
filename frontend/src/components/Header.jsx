@@ -2,10 +2,17 @@ import React from 'react'
 import { FaInstagram, FaSpotify, FaTiktok, FaYoutube } from 'react-icons/fa'
 import { Link, NavLink } from 'react-router-dom'
 
+import Logo from '../assets/logo.png'
+
 function Header() {
   return (
     <>
     <header>
+        <section>
+          <Link to='/'>
+            <img src={Logo} alt="" />
+          </Link>
+        </section>
         <nav>
             <ul>
                 <NavLink to='/'>Home</NavLink>
@@ -14,19 +21,6 @@ function Header() {
                 <NavLink to='/contact'>Contact</NavLink>
             </ul>
         </nav>
-        <Link to='/'>
-          <div className="logo">
-              <img src="/katana-cuts.svg" alt="" />
-          </div>
-        </Link>
-        <section>
-          <div className="social-links">
-            <FaInstagram/>
-            <FaYoutube/>
-            <FaSpotify/>
-            <FaTiktok/>
-          </div>
-        </section>
     </header>
     </>
   )

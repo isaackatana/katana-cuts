@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { FaInstagram, FaSpotify, FaTiktok, FaYoutube } from 'react-icons/fa';
+import { FaCartPlus, FaInstagram, FaSpotify, FaTiktok, FaYoutube } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 function ProductList() {
@@ -18,12 +18,8 @@ function ProductList() {
       <div className="wrapper" key={product.id}>
           <img src={product.image} alt="" />
           <Link to='/products/product/:slug'><h3>{product.name}</h3></Link>
-          <div className="social-media">
-            <a href="" target=""></a>
-            <FaInstagram/>
-            <FaYoutube/>
-            <FaSpotify/>
-            <FaTiktok/>
+          <div className="social-links">
+            <FaCartPlus/>
           </div>
       </div>
     ))}

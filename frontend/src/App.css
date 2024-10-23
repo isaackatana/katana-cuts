@@ -11,7 +11,8 @@ body {
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
 }
-body header {
+
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,91 +22,139 @@ body header {
   background-color: black;
   z-index: 1;
 }
-body header .logo {
-  cursor: pointer;
+@media screen and (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
 }
-body header .logo img {
-  width: 75px;
-}
-body header nav ul {
+header nav ul {
   display: flex;
   gap: 30px;
 }
 @media screen and (max-width: 480px) {
-  body header nav ul {
+  header nav ul {
     display: none;
   }
 }
-body header nav ul a {
+header nav ul a {
   list-style: none;
   font-size: large;
+  font-weight: bold;
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-body header nav ul .active {
+header nav ul .active {
   color: yellow;
 }
-body header section .social-links {
+header section {
+  display: flex;
+  gap: 10px;
+}
+header section .social-links {
   display: flex;
   justify-content: center;
   gap: 5px;
 }
-body header section .social-links svg {
+header section .social-links svg {
   font-size: 30px;
   cursor: pointer;
 }
-body .home {
+header section a {
+  display: flex;
+  place-items: center;
+}
+header section a img {
+  width: 75px;
+  height: 100%;
+}
+@media screen and (max-width: 480px) {
+  header section a img {
+    width: 60px;
+  }
+}
+
+.home {
   display: flex;
   flex-direction: column;
   gap: 15px;
   padding: 10px 30px;
 }
 @media screen and (max-width: 480px) {
-  body .home {
+  .home {
     padding: 7.5px;
     gap: 15px;
   }
 }
-body .home .latest-videos {
+.home .latest-videos {
   display: flex;
   gap: 10px;
   overflow: hidden;
 }
-body .home .latest-videos .container {
+.home .latest-videos .container {
   display: flex;
   gap: 15px;
+  position: relative;
+  place-items: center;
 }
-body .home .latest-videos .container .wrapper {
-  width: 560px;
-  height: 315px;
+.home .latest-videos .container svg {
+  font-size: 50px;
+  position: fixed;
+  cursor: pointer;
 }
 @media screen and (max-width: 480px) {
-  body .home .latest-videos .container .wrapper {
-    width: 394px;
+  .home .latest-videos .container svg {
+    font-size: 30px;
   }
 }
-body .home .latest-videos .container .wrapper iframe {
+.home .latest-videos .container .left {
+  left: 40px;
+}
+@media screen and (max-width: 480px) {
+  .home .latest-videos .container .left {
+    left: 20px;
+  }
+}
+.home .latest-videos .container .right {
+  right: 40px;
+}
+@media screen and (max-width: 480px) {
+  .home .latest-videos .container .right {
+    right: 20px;
+  }
+}
+.home .latest-videos .container .wrapper {
+  width: 560px;
+  height: 260px;
+}
+@media screen and (max-width: 480px) {
+  .home .latest-videos .container .wrapper {
+    width: 360px;
+  }
+}
+.home .latest-videos .container .wrapper iframe {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
 }
-body .store {
+
+.store {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
   padding: 10px 30px;
 }
 @media screen and (max-width: 480px) {
-  body .store {
+  .store {
     grid-template-columns: 1fr;
     padding: 7.5px;
   }
 }
-body .store .wrapper {
+.store .wrapper {
   height: 400px;
   gap: 10px;
   position: relative;
 }
-body .store .wrapper img {
+.store .wrapper img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -114,38 +163,79 @@ body .store .wrapper img {
      object-position: top;
   border-radius: 20px;
 }
-body .store .wrapper a {
+.store .wrapper a {
   color: white;
 }
-body .store .wrapper a h3 {
+.store .wrapper a h3 {
   position: absolute;
   left: 20px;
   bottom: 20px;
 }
-body .store .wrapper .social-links {
+.store .wrapper .social-links {
   position: absolute;
   right: 20px;
   bottom: 20px;
   display: flex;
   gap: 5px;
-}
-body .store .wrapper .social-links svg {
-  font-size: 30px;
+  font-size: x-large;
   cursor: pointer;
 }
-body footer {
+
+.contact {
+  padding: 10px 30px;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  gap: 10px;
+}
+.contact form div {
+  display: flex;
+  gap: 10px;
+}
+.contact form input {
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+}
+.contact form textarea {
+  padding: 20px;
+  height: 120px;
+  border-radius: 5px;
+  border: none;
+}
+.contact form div button {
+  width: 150px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: solid 1px;
+  border-radius: 5px;
+}
+.contact form div button:hover {
+  background-color: white;
+  color: black;
+}
+
+footer {
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   padding: 10px 30px;
+  gap: 20px;
 }
-body footer .social-links {
+footer .social-links {
   display: flex;
   justify-content: center;
   gap: 5px;
 }
-body footer .social-links svg {
+footer .social-links svg {
   font-size: 30px;
   cursor: pointer;
+}
+footer p {
+  font-size: small;
 }/*# sourceMappingURL=App.css.map */

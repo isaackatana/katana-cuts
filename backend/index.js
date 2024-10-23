@@ -18,26 +18,7 @@ app.use(cors({
 
 // Artists
 const artists = [
-  {
-    id: 1,
-    image: './images/Logo.jpeg',
-    name: 'Donn-J',
-  },
-  {
-    id: 2,
-    image: './images/Logo.jpeg',
-    name: 'Adam Leenz',
-  },
-  {
-    id: 3,
-    image: './images/Logo.jpeg',
-    name: 'D-Berry',
-  },
-  {
-    id: 4,
-    image: './images/Logo.jpeg',
-    name: 'Drug Beats',
-  },
+  
 ];
 
 app.get('/api/artists', (req, res) => {
@@ -70,22 +51,22 @@ const products = [
   {
     id: 1,
     image: './images/Logo.jpeg',
-    name: 'Donn-J',
+    name: 'Cap',
   },
   {
     id: 2,
     image: './images/Logo.jpeg',
-    name: 'Adam Leenz',
+    name: 'T-Shirts',
   },
   {
     id: 3,
     image: './images/Logo.jpeg',
-    name: 'D-Berry',
+    name: 'Hoody',
   },
   {
     id: 4,
     image: './images/Logo.jpeg',
-    name: 'Drug Beats',
+    name: 'Bags',
   },
 ];
 

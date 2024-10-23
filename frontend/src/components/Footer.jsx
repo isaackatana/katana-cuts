@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaInstagram, FaSpotify, FaTiktok, FaYoutube } from 'react-icons/fa'
+import { FaInstagram, FaTiktok, FaYoutube } from 'react-icons/fa'
 
 function Footer() {
   return (
@@ -8,7 +8,6 @@ function Footer() {
       <div className="social-links">
         <FaInstagram/>
         <FaYoutube/>
-        <FaSpotify/>
         <FaTiktok/>
       </div>
       <p>© 2024 Katana Cuts LLC. All Rights Reserved.</p>

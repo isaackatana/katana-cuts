@@ -1,5 +1,6 @@
 import React from 'react'
 import VideoList from './VideoList'
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 
 function Home() {
   return (
@@ -7,6 +8,8 @@ function Home() {
     <div className="home">
     <div className="latest-videos">
       <div className="container">
+        <FaArrowRight className='right'/>
+        <FaArrowLeft className='left'/>
         <VideoList/>
       </div>
     </div>
